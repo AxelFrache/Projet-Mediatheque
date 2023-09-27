@@ -1,6 +1,6 @@
 <h1 align="center">Projet Médiathèque</h1>
 
-Projet académique réalisé à l'IUT ayant pour thème l'utilisation de AJAX pour mettre en place une application médiathèque.
+Projet académique réalisé à l'IUT ayant pour thème l'utilisation de AJAX pour mettre en place une application destiné à l'administration d'une médiathèque.
 
 📚 Contexte
 ---

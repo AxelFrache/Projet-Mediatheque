@@ -1,0 +1,112 @@
+body {
+	width:75%;
+	margin:1em auto 0 auto;
+	padding:0px 20px 20px 20px;
+	border:solid 2px grey;
+}
+
+#enregistrements, #listes {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 2em;
+}
+
+#ajoutAdherent, #ajoutLivre {
+	width: 50%;
+}
+
+#adh {
+	width: 20%;
+}
+
+#dispos, #empr {
+	width: 40%;
+}
+
+#adh fieldset, #dispos fieldset, #empr fieldset {
+	min-height:35em;
+}
+
+legend {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size :2em;
+	color:white;
+	background-color: grey;
+	border-radius: 4px;
+	padding: 10px;
+	box-shadow: 4px 4px 4px black;
+	text-align: center;
+}
+
+ul {
+	padding-left: 20px;
+}
+
+li {
+	cursor:pointer;
+	background-color: white;
+	line-height: 1.5em;
+}
+
+li:hover {
+	background-color: lightgrey;
+}
+
+input {
+	padding:5px;
+	font-size: 1.2em;
+}
+
+input[type="button"] {
+	width:25%;
+}
+input[type="text"] {
+	width:70%;
+}
+
+input {
+	min-height:1.2em;
+}
+
+.iconeLivre{
+	width: 1em;
+	height: 1em;
+	padding-left: 5px;
+}
+
+.imgSupAdherent:hover{
+	background-color: red;
+}
+
+.imgSupLivre:hover{
+	background-color: red;
+}
+
+.imgSupEmpruntLivre:hover{
+	background-color: red;
+}
+
+.suggestions-livres {
+	width: 30%;
+	border: 1px solid #d4d4d4;
+	z-index: 99;
+	max-height: 200px;
+	overflow-y: auto;
+	cursor: pointer;
+	background-color: #ffffff;
+	position: absolute;
+	display: none;
+}
+
+.suggestions-livres div {
+	padding: 10px 10px;
+	font-size: 1.1em;
+
+}
+.suggestions-livres div:hover {
+	background-color: #f2f2f2;
+}

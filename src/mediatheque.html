@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>médiathèque JS</title>
+	<link rel="icon" href="img/book.ico" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/stylePopUpAdhrent.css">
+
+</head>
+
+<body>
+	<script src="js/objects/Emprunts.js"></script>
+	<script src="js/objects/Livres.js"></script>
+	<script src="js/objects/Adherents.js"></script>
+	<script defer src="js/Adherent.js"></script>
+	<script src="js/Livre.js"></script>
+
+	<h2>Médiathèque JavaScript</h2>
+
+	<div id="popup" class="popup" style="display:none;">
+		<div class="popup-content">
+			<span id="close-popup" class="close">&times;</span>
+		</div>
+	</div>
+
+	<div id="enregistrements">
+		<div id="ajoutAdherent">
+			<fieldset>
+				<legend>nouvel adhérent</legend>
+				<input type="text" id="nomAdherent" placeholder="nom...">
+				<input type="button" id="ajouterAdherent" value="ajouter">
+			</fieldset>
+		</div>
+		<div id="ajoutLivre">
+			<fieldset>
+				<legend>nouveau livre</legend>
+				<input type="text" id="titreLivre" name="titreLivre" placeholder="Entrez le titre du livre" oninput="autocompletion(this.value)">
+				<input type="button" id="ajouterLivre" value="ajouter">
+				<div id="suggestionsLivres" class="suggestions-livres"></div>
+			</fieldset>
+		</div>
+	</div>
+	<div id="listes">
+		<div id="adh">
+			<fieldset>
+				<legend>adhérents</legend>
+				<div id="listeAdherents"></div>
+			</fieldset>
+		</div>
+		<div id="dispos">
+			<fieldset>
+				<legend>livres disponibles</legend>
+				<div id="listeLivresDisponibles"></div>
+			</fieldset>
+		</div>
+		<div id="empr">
+			<fieldset>
+				<legend>livres empruntés</legend>
+				<div id="listeLivresEmpruntes"></div>
+			</fieldset>
+		</div>
+	</div>
+
+
+</body>
+</html>
